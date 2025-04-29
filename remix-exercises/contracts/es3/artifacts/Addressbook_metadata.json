@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Person",
+						"name": "person",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "phone",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "_address",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Addressbook.Entry",
+						"name": "entry",
+						"type": "tuple"
+					}
+				],
+				"name": "addEntry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Person",
+						"name": "person",
+						"type": "address"
+					}
+				],
+				"name": "getEntry",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "phone",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "_address",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Addressbook.Entry",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/es3/Addressbook.sol": "Addressbook"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/es2/Person.sol": {
+			"keccak256": "0xfdbb85f2ce6e4a4aaf39d898f008dba9293698bdb3f2e770f36a43cba8fb59f5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2bd8be30bb9b482571dbe0fa527de627f3f8571d21abd1b75599df3377d3036c",
+				"dweb:/ipfs/QmZiubJFogXfcrDEiEpHrEh8U5BAidmxYMQZwWKBwSrkTu"
+			]
+		},
+		"contracts/es3/Addressbook.sol": {
+			"keccak256": "0x0a9ca03a42927d0d765ad17dcd983ac0802e9da8445355d979e0b827e12be567",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9a0bb8b79b5f05c340bd1e5d04e3cdc67386375978e3f9cae106afe5a7735ab9",
+				"dweb:/ipfs/QmV4uRwptCrC1UFaDMddwfeP2TYkuHfJyjtHbxdezoAmRn"
+			]
+		}
+	},
+	"version": 1
+}

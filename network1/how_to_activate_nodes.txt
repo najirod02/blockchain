@@ -1,0 +1,27 @@
+all the commands used to create and run a node can be seen in their respective shell files.
+
+after running the nodes, it is possible to connect to them by typing:
+
+geth attach http://localhost:<node_port>
+
+
+after getting access to the node, it is possible to query it to obtain
+some information, for example:
+
+admin.nodeInfo # the details of the node
+
+admin.peers # the details of peer nodes
+
+admin.addPeer('ENODE_ADDRESS_OF_PEER') # to manually add a new peer
+
+clique.getSigners() # get list of signers
+
+eth.sendTransaction(
+{
+from: "0xENODE_ADDRESS",
+to:"0xENODE_ADDRESS",
+value: "how_much"
+}
+) # send transaction from onw to another node
+
+eth.getTransaction("0xTRANSACTION_ADDRESS") # print transaction's info
